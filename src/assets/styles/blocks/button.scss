@@ -1,0 +1,29 @@
+.button {
+  padding: 20px;
+  color: $main-color;
+  font-size: 30px;
+  text-transform: uppercase;
+
+  border: 2px $main-color solid;
+  border-radius: 15px;
+  background-color: transparent;
+  transition: 0.5s ease;
+
+  &:hover {
+    color: white;
+    background-color: $main-color;
+    transition: 0.5s ease;
+  }
+}
+@media (max-width: 950px) {
+  .button {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .button {
+    font-size: 15px;
+  }
+}

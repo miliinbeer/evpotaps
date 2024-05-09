@@ -1,0 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  color: #828282;
+}
+:target {
+  scroll-margin-top: -60px;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald/Oswald.ttf");
+}
+@media (max-width: 850px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media (max-width: 350px) {
+  body {
+    font-size: 15px;
+  }
+}

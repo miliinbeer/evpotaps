@@ -1,0 +1,60 @@
+.city {
+  padding: 5% 10px;
+  @include span;
+  &__items {
+    @include elements-column;
+    gap: 50px;
+  }
+  &__image {
+    max-width: 100%;
+  }
+  &__item {
+    @include elements-space;
+    align-items: center;
+    gap: 30px;
+  }
+  &__text {
+    border-left: 3px $main-color solid;
+    padding-left: 20px;
+  }
+  &__images {
+    max-width: 25%;
+    &:first-child {
+      max-width: 60%;
+    }
+  }
+
+  &__description {
+    text-align: center;
+  }
+}
+@media (max-width: 1100px) {
+  .city {
+    &__items {
+      gap: 30px;
+    }
+    &__item {
+      gap: 15px;
+    }
+    &__images {
+      &:first-child {
+        max-width: 50%;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .city {
+    &__item {
+      flex-direction: column;
+    }
+    &__images {
+      &:last-child {
+        display: none;
+      }
+      &:first-child {
+        max-width: 100%;
+      }
+    }
+  }
+}

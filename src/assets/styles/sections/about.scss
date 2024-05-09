@@ -1,0 +1,50 @@
+.about {
+  padding: 5% 0;
+  @include span;
+  background-color: $background-color;
+  &__description {
+    margin: 0 0 5% 0;
+    text-align: center;
+  }
+  &__items {
+    @include elements-column;
+    gap: 20px;
+  }
+  &__item {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+    @include elements-space;
+    align-items: center;
+    gap: 15px;
+  }
+  &__texts {
+    @include elements-column;
+    gap: 5px;
+  }
+  &__image {
+    max-width: 35%;
+    &-2 {
+      max-width: 25%;
+    }
+  }
+}
+@media (max-width: 850px) {
+  .about {
+    &__items {
+      gap: 15px;
+    }
+    &__item {
+      width: 500px;
+      flex-direction: column-reverse;
+      gap: 15px;
+      &:last-child {
+        flex-direction: column;
+      }
+    }
+
+    &__image {
+      max-width: 50%;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.guarantees {
+  padding: 5% 10px;
+  @include span;
+  @include elements-align;
+  flex-direction: column;
+  &__image {
+    max-width: 100%;
+  }
+  &__texts {
+    margin: 5% 0 0 0;
+    @include elements-column;
+    gap: 20px;
+  }
+  &__link {
+    color: $main-color;
+    text-decoration: underline;
+  }
+  &__button {
+    margin: 5% 0 0 0;
+  }
+}

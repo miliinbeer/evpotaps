@@ -1,0 +1,56 @@
+.icon {
+  width: 75px;
+  height: 75px;
+  @include elements-align;
+  justify-content: center;
+  &-image {
+    transition: 0.5s ease;
+    &:hover {
+      width: 75px;
+      height: 75px;
+      transition: 0.5s ease;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .icon {
+    width: 65px;
+    height: 65px;
+    &-image {
+      width: 50px;
+      height: 50px;
+      &:hover {
+        width: 65px;
+        height: 65px;
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  .icon {
+    width: 55px;
+    height: 55px;
+    &-image {
+      width: 45px;
+      height: 45px;
+      &:hover {
+        width: 55px;
+        height: 55px;
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  .icon {
+    width: 45px;
+    height: 45px;
+    &-image {
+      width: 40px;
+      height: 40px;
+      &:hover {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.services {
+  padding: 5% 0;
+  text-align: center;
+  background-color: $background-color;
+
+  &__cards {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  &__card {
+    cursor: pointer;
+    padding: 0 20px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 300px;
+    height: 300px;
+    @include elements-align;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 4px 16px 50px rgba(129, 135, 163, 0.24);
+    transition: 0.5s ease;
+    &:hover {
+      color: $main-color;
+      transition: 0.5s ease;
+    }
+  }
+  &__texts {
+    margin: 5% 0 0 0;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 1100px) {
+  .services {
+    &__card {
+      width: 250px;
+      height: 250px;
+      padding: 0 5px;
+    }
+    &__icon {
+      width: 75px;
+      height: 75px;
+    }
+  }
+}
+@media (max-width: 850px) {
+  .services {
+    &__cards {
+      gap: 15px;
+    }
+    &__card {
+      width: 200px;
+      height: 200px;
+    }
+    &__icon {
+      width: 55px;
+      height: 55px;
+    }
+  }
+}

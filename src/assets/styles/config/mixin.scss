@@ -1,0 +1,17 @@
+@mixin elements-space {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin elements-align {
+  display: flex;
+  align-items: center;
+}
+@mixin elements-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin span {
+  span {
+    color: $main-color;
+  }
+}

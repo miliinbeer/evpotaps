@@ -1,0 +1,43 @@
+.header {
+  padding: 2% 0;
+  box-shadow: (4px 16px 50px rgba(129, 135, 163, 0.24));
+  background-color: white;
+
+  &__links {
+    @include elements-space;
+    gap: 20px;
+  }
+  &__navigation {
+    max-width: 100%;
+    width: 700px;
+    @include elements-space;
+  }
+  &__telephone {
+    min-width: 185px;
+    margin-top: -2px;
+    color: $main-color;
+    font-weight: 700;
+  }
+  &__menu {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .header {
+    &__links {
+      @include elements-space;
+      align-items: center;
+    }
+    &__navigation {
+      display: none;
+    }
+    &__telephone {
+      min-width: 0;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .header {
+    padding: 4% 0;
+  }
+}

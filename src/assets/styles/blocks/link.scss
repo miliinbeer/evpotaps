@@ -1,0 +1,10 @@
+.link {
+  color: $font-color;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s ease;
+  &:hover {
+    border-color: $main-color;
+    transition: 0.5s ease;
+  }
+}

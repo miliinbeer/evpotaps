@@ -1,0 +1,19 @@
+@import "./config/config.scss";
+@import "./config/layout.scss";
+@import "./config/mixin.scss";
+@import "./config/reset.scss";
+@import "./config/variables.scss";
+
+@import "./blocks/link.scss";
+@import "./blocks/image.scss";
+@import "./blocks/button.scss";
+@import "./blocks/icon.scss";
+@import "./blocks/title.scss";
+
+@import "./sections/header.scss";
+@import "./sections/hero.scss";
+@import "./sections/services.scss";
+@import "./sections/guarantees.scss";
+@import "./sections/about.scss";
+@import "./sections/city.scss";
+@import "./sections/contacts.scss";
