@@ -532,6 +532,8 @@ a {
   .contacts__items {
     gap: 30px;
   }
+}
+@media (max-width: 750px) {
   .contacts__icons {
     width: 350px;
   }

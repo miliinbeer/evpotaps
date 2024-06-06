@@ -28,6 +28,10 @@
     &__items {
       gap: 30px;
     }
+  }
+}
+@media (max-width: 750px) {
+  .contacts {
     &__icons {
       width: 350px;
     }
